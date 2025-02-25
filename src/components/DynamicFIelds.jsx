@@ -4,7 +4,7 @@ const  DynamicFIelds = ()=> {
 const [fields, setFields] = useState([{id: Date.now(), name: '', age: ''}])
   const handelSubmit = (e)=> {
     e.preventDefault();
-    console.log({name: fields[0].name, age: fields[0].age})
+    console.log(fields)
   }
   const handleChange = (id, e)=> {
     const { name, value } = e.target;
